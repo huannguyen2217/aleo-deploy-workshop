@@ -11,8 +11,8 @@ Make sure you have the following software installed on your local machine:
 1.  [Install Git](https://git-scm.com/downloads)
 2.  [Install Rust](https://www.rust-lang.org/tools/install)
 3.  [Install Leo](https://developer.aleo.org/leo/installation)
-4.  [Install snarkos](https://developer.aleo.org/testnet/getting_started/installation/)
-5.  [Install Leo Wallet](https://leo.app/)
+4.  (Optional) [Install snarkos](https://developer.aleo.org/testnet/getting_started/installation/)
+5.  (Optional) [Install Leo Wallet](https://leo.app/)
 6.  [Install VSCode](https://code.visualstudio.com/download)
 
 ### FAQ
@@ -148,6 +148,8 @@ Let's make sure that our program is working by running the following commands:
 
 Copy the output record from the mint transition and paste it into the `./inputs/project_name.in` file under the `[transfer]` section. Be sure to remove the `.private` and `.public` suffixes.
 
+##### **TODO** add your screenshot of mint output here:
+
 3. Can we transfer tokens? `leo run transfer`
 
 ```craigjohnson@home deploy_workshop % leo run transfer
@@ -173,6 +175,8 @@ Copy the output record from the mint transition and paste it into the `./inputs/
 
 You can see here, one account now has 90 tokens and the other has 10, meaning we succesfully transfered 10 tokens.
 
+##### **TODO** add your screenshot of transfer output here:
+
 ### Step 3. Create our Deployment Script
 
 We need a few environment variables set to deploy our program. We can create a script to set these variables for us.
@@ -190,7 +194,7 @@ cd .. && snarkos developer deploy "${APPNAME}.aleo" --private-key "${PRIVATEKEY}
 
 Fill out the variables with the appropriate values and save the file
 
-### Step 4. Execute the Script to Deploy our Program
+### [skip this for now] Step 4. Execute the Script to Deploy our Program
 
 Run the deploy script
 
